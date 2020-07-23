@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'EB Garamond', serif!important;
+}
+
+h1,
+h2,
+h3,
+p {
+    padding: 5px;
+}
+
+.col-flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.text-position {
+    display: inline-flex;
+}
+
+.top {
+    position: absolute;
+    top: 498px;
+    right: 5px;
+    background: rgb(255 104 92);
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 23px;
+    box-shadow: 0 1px 19px 0;
+    position: fixed;
+    text-decoration: none;
+}
+
+.Facilities,
+.contact-head,
+.heading,
+.school,
+.school-about,
+.school-about-img,
+.school-bg-view,
+.teacher-about,
+.text-position {
+    width: 100%;
+}
+
+.pad-10 {
+    padding: 10px;
+}
+
+.pad-5 {
+    padding: 5px;
+}
+
+.bg-orange {
+    background-color: rgb(255 104 92);
+    color: #fff;
+}
+
+.logo>img {
+    width: 61px;
+}
+
+section {
+    padding-top: 70px!important;
+}
+
+p {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 2px
+}
+
+.logo {
+    width: 31%;
+}
+
+a {
+    color: #000!important;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.pad-top {
+    padding-top: 9px;
+}
+
+.color-orange {
+    color: rgb(255 104 92);
+}
+
+.color-white {
+    color: #fff;
+}
+
+.upper-layer {
+    background: rgb(0 0 0 / 48%);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+    background-color: #fff;
+    box-shadow: 0 13px 12px -10px;
+}
+
+.bg-1 {
+    background-image: url(../img/school-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-2 {
+    background-image: url(../img/bg-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.school-bg-view {
+    padding: 156px 90px;
+    color: #fff;
+}
+
+.school-bg-view>h1 {
+    color: rgb(255 255 255);
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.school {
+    text-align: right!important;
+}
+
+.list {
+    display: inline-flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.school-about-img,
+.teacher-about {
+    position: relative;
+}
+
+.school-about-img:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgb(255 104 92);
+    top: -1px;
+    left: -1px;
+    border-width: 5px 0 0 5px;
+}
+
+.school-about-img::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgb(255 104 92);
+    bottom: -1px;
+    right: -1px;
+    border-width: 0 5px 5px 0;
+    top: 449px;
+}
+
+.name {
+    background: rgb(255 104 92);
+    padding: 7px;
+    margin: 0 10px;
+}
+
+.Facilities {
+    border: 3px dotted rgb(0 0 0);
+    margin: 10px 10px;
+}
+
+.btn {
+    background: rgb(255 104 92);
+    color: rgb(255 255 255);
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.block,
+.block-1 {
+    display: none;
+}
+
+.btn:hover {
+    background: 0 0;
+    border: 1px solid rgb(255 255 255);
+    color: #fff;
+}
+
+.footer-layer {
+    background: rgb(56 56 56) url(https://ramomcoder.com/v3/assets/frontend/images/07.png);
+}
+
+.Facilities:hover {
+    border-color: rgb(255 104 92);
+}
+
+.bn-hide {
+    display: none!important;
+}
+
+@media (max-width:1024px) {
+    .col-flex {
+        display: block;
+        flex-wrap: wrap;
+    }
+    .bg-1 {
+        background-image: url(../img/school-bg.jpg);
+        background-size: cover;
+        background-position: 62% 51%;
+    }
+    .block {
+        display: block;
+        position: absolute;
+        right: 34px;
+        top: 18px;
+        font-size: 41px;
+        color: rgb(255 104 92);
+        z-index: 99999;
+    }
+    #menu:checked~header .school-nav {
+        display: block;
+        text-align: left;
+        padding: 76px 0 0 0;
+        margin: 0 0 0 -75px;
+    }
+    .contact,
+    .none,
+    .school-nav {
+        display: none;
+    }
+    .school-bg-view {
+        padding: 156px 23px;
+        color: rgb(255 255 255);
+    }
+    .logo {
+        width: 21%;
+    }
+    .bn-hide {
+        display: block!important;
+    }
+}

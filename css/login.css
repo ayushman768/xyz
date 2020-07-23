@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.col-flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+body {
+    color: white!important;
+    background: url(..//img/b-7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home {
+    font-size: 24px;
+    border: none!important;
+    color: rgb(255 255 255);
+    padding: 8px!important;
+}
+
+.Log {
+    padding: 20px;
+}
+
+.text-position {
+    display: inline-flex;
+}
+
+i {
+    font-size: 36px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid rgb(255 104 92);
+    color: rgb(255 104 92);
+}
+
+.Type {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.set {
+    padding-top: 16px;
+}
+
+.form,
+.text-position,
+.Log,
+.Type {
+    width: 100%;
+}
+
+.form {
+    width: 46%!important;
+    top: 13px;
+    position: relative;
+    bottom: 50px;
+    margin: auto;
+}
+
+@media (max-width:1024px) {
+    .form {
+        width: 89%!important;
+        top: 13px;
+        position: relative;
+        bottom: 50px;
+        margin: auto;
+    }
+    body {
+        color: rgb(0 0 0)!important;
+        background: url(..//img/bg-1.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    main {
+        background: rgb(0 0 0 / 49%);
+        color: rgb(255 255 255);
+        line-height: 3.7;
+        padding: 13px;
+    }
+    .btn {
+        margin: 0px -6px;
+    }
+    .Log {
+        padding: 0px;
+    }
+    .Type {
+        padding: 0px;
+    }
+}
